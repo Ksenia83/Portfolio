@@ -1,0 +1,99 @@
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+ 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body>
+<style>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+#main {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #333;
+  position: center;
+  background-color: rgba(115, 115, 250, 0.1);
+}
+h1{
+  font-family: Lobster;
+  color: green;
+}
+#img-div {
+  background: white;
+  padding: 10px;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+  font-size: 1.4rem;
+}
+ul {
+  max-width: 550px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  line-height: 1.6;
+}
+li {
+  margin: 16px 0;
+}
+h5 {
+  font-family: Times New Roman;
+  font-size: 20px;
+}
+.tabl {
+  position: center;
+  padding: 350px;
+}
+</style>
+<main id="main">
+  <h1 id="title">Петр I Великий</h1>
+  <p>Последний царь всея Руси и первый Император Всероссийский</p>
+  <figure id="img-div">
+    <img id="image" src="https://avatars.mds.yandex.net/get-pdb/2104893/ca2da654-94b3-4378-aac4-90643833f512/s1200" alt="Император Петр I Великий.">
+    <figcaption id="img-caption">
+      "Петр Алексеевич - последний царь всея Руси и первый Император Всероссийский, развернул масштабные реформы российского государства и общественного уклада."
+      </figcaption>
+</figure>
+ <section id="tribute-info"> 
+  <h3 id="headline">Интересные факты из жизни Петра I Великого:</h3>
+  <ul>
+  <li><strong>30 мая 1672 года</strong> - Родился в г. Москве.</li>
+  <li><strong>1676</strong> - Когда Петру Алексеевичу было 4 года, скончался его отец царь Алексей Михайлович Романов, на трон взошел старший брат Петра Федор III Алексеевич.</li>
+  <li><strong>1682</strong> - Скончался Федор Алексеевич, на трон были венчаны сразу 2 царя: Иван и Петр, оба были несовершенолетние, поэтому регентом при них стала их старшая сестра царевна Софья Алексеевна.</li>
+  <li><strong>1689</strong> - царь Иван официально передал всю власть брату, вследстие чего единственным полноправным главой государства стал Петр I. </li>
+  <li><strong>март 1697</strong> - в Западную Европу через Лифляндию было отправлено Великое посольство, основной целью которого было найти союзников против Османской империи. Всего в посольство вошло около 250 человек, среди которых под именем Петра Михайлова находился сам царь Петр I.</li>
+  <li>Новый <strong>7208</strong>-й год по русско-византийскому календарю (от сотворения мира) стал 1700 годом по юлианскому календарю.</li>
+  <li><strong>1699</strong> - первый общий рекрутский набор и начало обучения новобранцев по образцу, заведенному у преображенцев и семеновцев.</li>
+  <li><strong>16 (27) мая 1703 года</strong> - началось строительство Санкт-Петербурга, а на острове Котлин разместилась база русского флота - крепость Кроншлот (позднее Кронштадт). Был пробит выход к Балтийскому морю.</li>
+  <li><strong>1704</strong> - после взятия Дерпта и Нарвы Россия закрепилась в Восточной Прибалтике.</li>
+  <li><strong>27 июня (8 июля) 1709 года</strong> - Полтавская битва.</li>
+  <li><strong>1710</strong> - в войну вмешалась Турция.</li>
+  <li><strong>1711</strong> - Россия вернула Азов Турции и разрушила Таганрог.</li>
+  <li><strong>1713</strong> - шведы потерпели поражение в Померании и лишились всех владений в континентальной Европе.</li>
+  <li><strong>1714</strong> - летом Балтийский флот, хотя только создавался, сумел одержать первую победу в Гангутском сражении.</li>
+  <li><strong>22 октября (2 ноября) 1721 года</strong> - Петр по прошению сенаторов принял титул Отца Отечества, Императора Всероссийского, Петра Великого.</li>
+  <li><strong>28 января (8 февраля) 1725 года</strong> - Петр Великий скончался в  страшных мучениях в своем Зимнем дворце у Зимней канавки.</li>
+    </ul>
+  <p><em>"Варвар, цивилизовавший свою Россию; он, который строил города, а сам в них жить не хотел; он, который наказывал кнутом свою супругу и предоставил женщине широкую свободу - его жизнь была великой, богатой и полезной в общественном плане, в частном же плане такой, какой получалась."
+
+<cite>-- Август Стриндберг<cite></em></p>
+  <h3>Если у вас есть желание, то вы можете прочитать гораздо больше информации об этой поистине великой исторической личности по адресу <a id="tribute-link" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%91%D1%82%D1%80_I" target="_blank">Wikipedia entry</a>.</h3>
+</section>
+</main>
+</body>
