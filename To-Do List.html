@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<title>To-Do List</title>
+		
+		<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+		
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		
+		<style>
+		
+			h1 {
+				color: #1abc9c;
+				font-family: Lobster;
+			}
+			
+			.rem {
+				margin-left: 5px;
+				background-color: white;
+				color: red;
+				border: none;
+				cursor: pointer;
+			}
+			
+		</style>
+		
+	</head>
+	
+	<body>
+	
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+		
+		<h1>Мой список дел</h1>
+		<input type="text" placeholder="Новое задание" />
+		<button id="add">Добавить</button>
+		<ol id="myList"></ol>
+		
+		<script>
+		$(function() {
+			$("#add").on("click", function() {
+				var val = $("input").val();
+				if(val !== '') {
+					var elem = $("<li></li>").text(val);
+					$(elem).append("<button class='rem'>x</button>");
+					$("#myList").append(elem);
+					$("input").val("");
+					$(".rem").on("click", function() {
+						$(this).parent().remove();
+					});
+				}
+			});
+		});
+		</script>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Мой первый блог</title>
+		<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<style>
+			html {
+				margin: 0;
+				padding: 0;
+			}
+			
+			body {
+				font-family: Lobster;
+				font-size: 13pt;
+				background-color: #efefef;
+				padding: 10px;
+				margin: 0;
+			}
+			
+			h1 {
+				font-size: 15pt;
+				color: #20bcd5;
+				text-align: center;
+				padding: 10px;
+				margin: 0 0 10px 0;
+			}
+			
+			h1 span {
+				border: 4px dashed #20bcd5;
+				padding: 10px;
+			}
+			
+			p {
+				padding: 0;
+				margin: 0;
+			}
+			
+			.img-circle {
+				border: 3px solid white;
+				border-radius: 50%;
+			}
+			
+			.section {
+				background-color: #fff;
+				padding: 15px;
+				margin-bottom: 10px;
+				border-radius: 10px;
+			}
+			
+			#header {
+				background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+				background-size: cover;
+			}
+			
+			#header img {
+				display: block;
+				width: 80px;
+				height: 80px;
+				margin: auto;
+			}
+			
+			#header p {
+				font-size: 25pt;
+				color: #3b464c;
+				padding-top: 5px;
+				margin: 0;
+				font-weight: bold;
+				text-align: center;
+			}
+			
+			.quote {
+				font-size: 12pt;
+				text-align: right;
+				margin-top: 10px;
+			}
+			
+			table {
+				width: 100%;
+				font-size: 11pt;
+			}
+			
+			table, th, td {
+				border: 2px solid #cecece;
+				border-collapse: collapse;
+				text-align: center;
+				table-layout: fixed;
+			}
+			
+			.selected {
+				background-color: #f36f48;
+				font-weight: bold;
+				color: white;
+			}
+			
+			li {
+				margin-bottom: 15px;
+				font-weight: bold;
+			}
+			
+			progress {
+				width: 70%;
+				height: 20px;
+				color: #3fb6b2;
+				background: #efefef;
+			}
+			
+			progress::-webkit-progress-bar {
+				background: #efefef;
+			}
+			
+			progress::-webkit-progress-value {
+				background: #3fb6b2;
+			}
+			
+			progress::-moz-progress-bar {
+				color: #3fb6b2;
+				background: #efefef;
+			}
+			
+			form {
+				text-align: center;
+				margin-top: 0;
+			}
+			
+			.submit {
+				background-color: #3fb6b2;
+				padding: 12px 45px;
+				border-radius: 5px;
+				cursor: pointer;
+				color: #ffffff;
+				border: none;
+				outline: none;
+				margin:0;
+				font-weight: bold;
+			}
+			
+			.submit:hover {
+				background-color: #43a09d;
+			}
+			
+			textarea {
+				height: 100px;
+			}
+			
+			input, textarea {
+				margin-bottom: 10px;
+				font-size: 11pt;
+				padding: 15px 10px 10px;
+				border: 1px solid #cecece;
+				background-color: #efefef;
+				color: #787575;
+				border-radius: 5px;
+				width: 70%;
+				outline: none;
+			}
+			
+			.copyright {
+				font-size: 8pt;
+				text-align: right;
+				padding-bottom: 10px;
+				color: grey;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+	
+		<!--header start-->
+		<div id="header" class="section">
+			<img alt="" class="img-circle" src="https://code.sololearn.com/Icon/Avatars/0.jpg">
+			<p>Ксения</p>
+		</div>
+		<!--header end-->
+	
+		<!--About Me section start-->
+		<div class="section">
+			<h1><span>Обо мне</span></h1>
+			<p>
+				Привет! Меня зовут <strong>Ксения</strong>. Программирование изменило мою жизнь. Дело не только в создании приложений. Обучение
+				программированию дало мне навыки решения проблем и возможность общения на техническом уровне. Также я могу разрабатывать вебсайты и
+				использовать мои навыки программирования для получения лучшей работы. И я изучаю все это на <strong>SoloLearn</strong>, где укрепляется
+				твоя самооценка и поддерживается мотивация. Присоединяйтесь ко мне и вы получите массу удовольствия, помощь, в случае затруднений, и
+				обучение на всем пути.)))
+			</p>
+			<p class="quote">
+				"Declare variables, not war" / "Объявляйте варианты, а не войну"
+			</p>
+		</div>
+		<!--About Me section end-->
+		
+		<!--My Skills section start-->
+		<div class="section">
+			<h1><span>Мои Навыки</span></h1>
+			<ul>
+				<li><a href="">HTML</a><br /><progress min="0" max="100" value="70"></progress></li>
+				<li><a href="">CSS</a><br /><progress min="0" max="100" value="50"></progress></li>
+				<li><a href="">JavaScript</a><br /><progress min="0" max="100" value="30"></progress></li>
+				<li><a href="">PHP</a><br /><progress min="0" max="100" value="30"></progress></li>
+				<li><a href="">C++</a><br /><progress min="0" max="100" value="75"></progress></li>
+			</ul>
+		</div>
+		<!--My Skills section end-->
+		
+		<!--My Schedule section start-->
+		<div class="section">
+			<h1><span>Мой Календарь Программирования</span></h1>
+			<table>
+				<tr>
+					<th>День</th>
+					<th>Пн</th>
+					<th>Вт</th>
+					<th>Ср</th>
+					<th>Чт</th>
+					<th>Пт</th>
+					<th>Сб</th>
+					<th>Вс</th>
+				</tr>
+				<tr>
+					<td>8.00-8.30</td>
+					<td class="selected">Обучение</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>9.00-10.00</td>
+					<td></td>
+					<td class="selected">Практика</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>13.00-13.30</td>
+					<td></td>
+					<td></td>
+					<td class="selected">Игра</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>15.45-17.00</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="selected">Программирование</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>18.00-18.15</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="selected">Обсуждение</td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+		<!--My Schedule section end-->
+		
+		<!--Form section start-->
+		<div class="section">
+			<h1><span>Обратная связь</span></h1>
+			<form>
+				<input name="name" placeholder="Имя" type="text" required /><br />
+				<input name="email" placeholder="Email" type="email" required /><br />
+				<textarea name="message" placeholder="Сообщение" required></textarea>
+				<input type="submit" value="ОТПРАВИТЬ" class="submit" />
+			</form>
+		</div>
+		<!--Form section end-->
+		<div class="copyright">
+			&copy; 2020 My first Blog. All rights reserved.
+		</div>
+		
+	</body>
+</html>
